@@ -34,6 +34,7 @@
     function sure() {
         let div = document.getElementById('div');
         let data = document.getElementById('input').value;
+        if(data[data.length - 1] === ';') data = data.substring(0,data.length-1);
         div.style.transform = data;
     }
 </script>
